@@ -18,6 +18,12 @@ import { PopularPostsComponent } from './welcome/popular-posts/popular-posts.com
 import { TopFooterComponent } from './footer/top-footer/top-footer.component';
 import { MainFooterComponent } from './footer/main-footer/main-footer.component';
 import { RecentBlogPostsComponent } from './welcome/recent-blog-posts/recent-blog-posts.component';
+import { BlogComponent } from './blog/blog.component';
+import { FavPostsComponent } from './fav-posts/fav-posts.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { SigninComponent } from './auth/signin/signin.component';
+import { SignupComponent } from './auth/signup/signup.component';
+import {AppRoutingModule} from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -32,13 +38,19 @@ import { RecentBlogPostsComponent } from './welcome/recent-blog-posts/recent-blo
     PopularPostsComponent,
     TopFooterComponent,
     MainFooterComponent,
-    RecentBlogPostsComponent
+    RecentBlogPostsComponent,
+    BlogComponent,
+    FavPostsComponent,
+    WelcomeComponent,
+    SigninComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot(),
     FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent],

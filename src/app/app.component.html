@@ -1,35 +1,5 @@
 <app-header></app-header>
-<app-top-header></app-top-header>
-<app-carousel></app-carousel>
-
-  <!-- ****** Blog Area Start ****** -->
-    <section class="blog_area section_padding_0_80">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-8">
-                    <div class="row">
-
-                        <app-top-rated-post></app-top-rated-post>
-                        
-                        <app-recent-blog-posts></app-recent-blog-posts>
-
-                    </div>
-                </div>
-
-                <!-- ****** Blog Sidebar ****** -->
-                <div class="col-12 col-sm-8 col-md-6 col-lg-4">
-                    <div class="blog-sidebar mt-5 mt-lg-0">
-                        <!-- Single Widget Area -->
-                        <app-about-us></app-about-us>
-
-                        <app-popular-posts></app-popular-posts>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ****** Blog Area End ****** -->
-
-    
+    <app-top-header></app-top-header>
+        <router-outlet></router-outlet>
     <app-top-footer></app-top-footer>
-    <app-main-footer></app-main-footer>
+<app-main-footer></app-main-footer>
