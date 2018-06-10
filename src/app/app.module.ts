@@ -11,15 +11,13 @@ import { HeaderComponent } from './navigation/header/header.component';
 import { CarouselComponent } from './welcome/carousel/carousel.component';
 import { TopHeaderComponent } from './navigation/top-header/top-header.component';
 
-import { MostRecentPostsComponent } from './welcome/most-recent-posts/most-recent-posts.component';
-
 import { AboutUsComponent } from './welcome/about-us/about-us.component';
-import { PopularPostsComponent } from './welcome/popular-posts/popular-posts.component';
+import { PopularRecipesComponent } from './welcome/popular-recipes/popular-recipes.component';
 import { TopFooterComponent } from './footer/top-footer/top-footer.component';
 import { MainFooterComponent } from './footer/main-footer/main-footer.component';
-import { RecentBlogPostsComponent } from './welcome/recent-blog-posts/recent-blog-posts.component';
+import { RecentBlogRecipesComponent } from './welcome/recent-blog-recipes/recent-blog-recipes.component';
 import { BlogComponent } from './blog/blog.component';
-import { FavPostsComponent } from './fav-posts/fav-posts.component';
+import { FavRecipesComponent } from './fav-recipes/fav-recipes.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { SigninComponent } from './auth/signin/signin.component';
 import { SignupComponent } from './auth/signup/signup.component';
@@ -32,15 +30,13 @@ import {AppRoutingModule} from './app-routing.module';
     CarouselComponent,
     TopHeaderComponent,
 
-    MostRecentPostsComponent,
-
     AboutUsComponent,
-    PopularPostsComponent,
+    PopularRecipesComponent,
     TopFooterComponent,
     MainFooterComponent,
-    RecentBlogPostsComponent,
+    RecentBlogRecipesComponent,
     BlogComponent,
-    FavPostsComponent,
+    FavRecipesComponent,
     WelcomeComponent,
     SigninComponent,
     SignupComponent
