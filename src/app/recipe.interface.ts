@@ -1,6 +1,7 @@
 export interface Recipe {
 	content: string;
 	img: string;
-	author: string;
-	likes : Array<number> ;
+	author_id: number;
+	// author: string;
+	// likes : Array<number> ;
 }

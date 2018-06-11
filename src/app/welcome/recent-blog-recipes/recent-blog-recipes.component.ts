@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {RecipeService } from '../../recipe.service';
+import {Observable } from 'rxjs';
+import {Recipe} from '../../recipe.interface';
 
 @Component({
   selector: 'app-recent-blog-recipes',
@@ -7,9 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecentBlogRecipesComponent implements OnInit {
 
-  constructor() { }
+	recipes$: Object;
+
+  constructor(private data: RecipeService ) { }
 
   ngOnInit() {
+  	this.data.getRecentBlogRecipes()
+  	.subscribe(
+  		data => this.recipes$ = data
+  		
+  	)
   }
 
 }

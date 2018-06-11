@@ -22,6 +22,9 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { SigninComponent } from './auth/signin/signin.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import {AppRoutingModule} from './app-routing.module';
+import { ViewRecipeComponent } from './view-recipe/view-recipe.component';
+
+import {HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -39,14 +42,16 @@ import {AppRoutingModule} from './app-routing.module';
     MyRecipesComponent,
     WelcomeComponent,
     SigninComponent,
-    SignupComponent
+    SignupComponent,
+    ViewRecipeComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot(),
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],
