@@ -1,8 +1,8 @@
 <!-- ******* List Blog Area Start ******* -->
     <!-- we have four posts mainly -->
-    <div class="row" *ngFor= "let recipe of recipes$">
+    <div class="row" [@listStagger]="recipes$">
         <!-- Single Post -->
-        <div class="col-12">
+        <div class="col-12" *ngFor= "let recipe of recipes$">
             <div class="list-blog single-post d-sm-flex wow fadeInUpBig" data-wow-delay=".2s">
                 <!-- Post Thumb -->
                 <div class="post-thumb">
