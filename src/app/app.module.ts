@@ -17,7 +17,7 @@ import { TopFooterComponent } from './footer/top-footer/top-footer.component';
 import { MainFooterComponent } from './footer/main-footer/main-footer.component';
 import { RecentBlogRecipesComponent } from './welcome/recent-blog-recipes/recent-blog-recipes.component';
 import { BlogComponent } from './blog/blog.component';
-import { FavRecipesComponent } from './fav-recipes/fav-recipes.component';
+import { MyRecipesComponent } from './my-recipes/my-recipes.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { SigninComponent } from './auth/signin/signin.component';
 import { SignupComponent } from './auth/signup/signup.component';
@@ -36,7 +36,7 @@ import {AppRoutingModule} from './app-routing.module';
     MainFooterComponent,
     RecentBlogRecipesComponent,
     BlogComponent,
-    FavRecipesComponent,
+    MyRecipesComponent,
     WelcomeComponent,
     SigninComponent,
     SignupComponent
