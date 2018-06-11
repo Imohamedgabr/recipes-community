@@ -11,4 +11,12 @@ export class RecipeService {
   getRecentBlogRecipes(){
   	return this.http.get('http://localhost:8000/api/recipes/recent');
   }
+
+  getBlogRecipe(recipeId){
+  	return this.http.get('http://localhost:8000/api/recipe/'+recipeId);
+  }
+
+  getUserRecipes(){
+  	return this.http.get('http://localhost:8000/api/recipes/recent');
+  }
 }

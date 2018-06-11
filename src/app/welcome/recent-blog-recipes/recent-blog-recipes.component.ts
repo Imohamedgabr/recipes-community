@@ -20,6 +20,7 @@ export class RecentBlogRecipesComponent implements OnInit {
   		data => this.recipes$ = data
   		
   	)
+    
   }
 
 }

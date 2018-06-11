@@ -5,7 +5,7 @@
             <div class="row h-100 align-items-center">
                 <div class="col-12">
                     <div class="bradcumb-title text-center">
-                        <h2>View Post</h2>
+                        <h2>{{ recipe$.title }} </h2>
                     </div>
                 </div>
             </div>
@@ -18,8 +18,8 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-                            <li class="breadcrumb-item"><a href="#">Posts</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">View Post</li>
+                            <li class="breadcrumb-item"><a href="#">Recipes</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">View Recipe</li>
                         </ol>
                     </nav>
                 </div>
@@ -59,11 +59,11 @@
                                         <div class="post-author-date-area d-flex">
                                             <!-- Post Author -->
                                             <div class="post-author">
-                                                <a href="#">By Marian</a>
+                                                <a href="#">{{recipe$.user_id }} </a>
                                             </div>
                                             <!-- Post Date -->
                                             <div class="post-date">
-                                                <a href="#">May 19, 2017</a>
+                                                <a href="#">{{recipe$.created_at }} </a>
                                             </div>
                                         </div>
                                         <!-- Post Comment & Share Area -->
@@ -83,9 +83,9 @@
                                         </div>
                                     </div>
                                     <a href="#">
-                                        <h2 class="post-headline">Boil The Kettle And Make A Cup Of Tea Folks, This Is Going To Be A Big One!</h2>
+                                        <h2 class="post-headline">{{recipe$.title }} </h2>
                                     </a>
-                                    <p>Tiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea. Liusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qui s nostrud exercitation ullamLorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                    <p>{{recipe$.content }}  </p>
 
                                     <blockquote class="yummy-blockquote mt-30 mb-30">
                                         <h5 class="mb-30">“Technology is nothing. What's important is that you have a faith in people, that they're basically good and smart, and if you give them tools, they'll do wonderful things with them.”</h5>
