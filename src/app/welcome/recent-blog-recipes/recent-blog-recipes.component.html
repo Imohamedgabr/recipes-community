@@ -6,7 +6,7 @@
             <div class="list-blog single-post d-sm-flex wow fadeInUpBig" data-wow-delay=".2s">
                 <!-- Post Thumb -->
                 <div class="post-thumb">
-                    <img src="assets/img/blog-img/6.jpg" alt="">
+                    <img src="http://localhost:8000/storage/{{recipe.img}}" alt="">
                 </div>
                 <!-- Post Content -->
                 <div class="post-content">
@@ -14,11 +14,11 @@
                         <div class="post-author-date-area d-flex">
                             <!-- Post Author -->
                             <div class="post-author">
-                                <a href="#">{{recipe.user_id}} </a>
+                                <a href="#">{{recipe.author_name}} </a>
                             </div>
                             <!-- Post Date -->
                             <div class="post-date">
-                                <a href="#">{{recipe.created_at}} </a>
+                                <a href="#">{{recipe.created_at | date:'yyyy-MM-dd'}} </a>
                             </div>
                         </div>
                         <!-- Post Comment & Share Area -->

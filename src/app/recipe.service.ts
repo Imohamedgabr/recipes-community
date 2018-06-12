@@ -16,7 +16,7 @@ export class RecipeService {
   	return this.http.get('http://localhost:8000/api/recipe/'+recipeId);
   }
 
-  getUserRecipes(){
-  	return this.http.get('http://localhost:8000/api/recipes/recent');
+  getAllRecipes(){
+  	return this.http.get('http://localhost:8000/api/recipes/all');
   }
 }

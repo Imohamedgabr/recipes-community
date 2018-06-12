@@ -16,13 +16,14 @@ import { PopularRecipesComponent } from './welcome/popular-recipes/popular-recip
 import { TopFooterComponent } from './footer/top-footer/top-footer.component';
 import { MainFooterComponent } from './footer/main-footer/main-footer.component';
 import { RecentBlogRecipesComponent } from './welcome/recent-blog-recipes/recent-blog-recipes.component';
-import { BlogComponent } from './blog/blog.component';
+import { ArchiveComponent } from './archive/archive.component';
 import { MyRecipesComponent } from './my-recipes/my-recipes.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { SigninComponent } from './auth/signin/signin.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import {AppRoutingModule} from './app-routing.module';
 import { ViewRecipeComponent } from './view-recipe/view-recipe.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 import {HttpClientModule } from '@angular/common/http';
 
@@ -38,7 +39,7 @@ import {HttpClientModule } from '@angular/common/http';
     TopFooterComponent,
     MainFooterComponent,
     RecentBlogRecipesComponent,
-    BlogComponent,
+    ArchiveComponent,
     MyRecipesComponent,
     WelcomeComponent,
     SigninComponent,
@@ -51,7 +52,8 @@ import {HttpClientModule } from '@angular/common/http';
     MDBBootstrapModule.forRoot(),
     FormsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent],

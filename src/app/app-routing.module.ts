@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {WelcomeComponent} from './welcome/welcome.component';
-import {BlogComponent} from './blog/blog.component';
+import {ArchiveComponent} from './archive/archive.component';
 import { MyRecipesComponent } from './my-recipes/my-recipes.component';
 import { ViewRecipeComponent } from './view-recipe/view-recipe.component';
 
@@ -11,7 +11,7 @@ import { SignupComponent } from './auth/signup/signup.component';
 
 const routes: Routes = [
 	{path: '' , component: WelcomeComponent },
-	{path: 'blog' , component: BlogComponent },
+	{path: 'archive' , component: ArchiveComponent },
 	{path: 'my-recipes' , component: MyRecipesComponent },
 	{path: 'view/:id' , component: ViewRecipeComponent },
 	{path: 'signin' , component: SigninComponent },
