@@ -36,6 +36,9 @@ import { trigger,style,transition,animate,keyframes,query,stagger } from '@angul
 export class RecentBlogRecipesComponent implements OnInit {
 
 	recipes$: Object;
+  likes$ : string;
+  arr$ : any;
+  array$ : number[];
 
   constructor(private data: RecipeService ) { }
 
@@ -43,9 +46,25 @@ export class RecentBlogRecipesComponent implements OnInit {
   	this.data.getRecentBlogRecipes()
   	.subscribe(
   		data => this.recipes$ = data
-  		
   	)
-    
+  
+  // get the userId and the fav recipe so u can mark it down
+    this.data.getUserId().subscribe(
+      data => {
+        this.likes$ = JSON.stringify(data);
+        this.arr$ = this.likes$.replace(']', '');
+        this.arr$ = this.arr$.replace('[', '');
+        this.arr$=  this.arr$.split(',');
+
+        for (var i=0; i<this.arr$.length; i++)
+        {
+            this.arr$[i] = parseInt(this.arr$[i], 10);
+        }
+          console.log(this.arr$);
+      }
+    )
+    // console.log(this.likes$.likes);
   }
+
 
 }

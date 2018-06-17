@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 
 
 import { MDBBootstrapModule } from './../../angular-bootstrap-md';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,NgForm } from '@angular/forms';
 import { HeaderComponent } from './navigation/header/header.component';
 import { CarouselComponent } from './welcome/carousel/carousel.component';
 import { TopHeaderComponent } from './navigation/top-header/top-header.component';
@@ -26,6 +26,9 @@ import { ViewRecipeComponent } from './view-recipe/view-recipe.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 
 import {HttpClientModule } from '@angular/common/http';
+import { ContainPipe } from './contain.pipe';
+import {BooleanPipesModule, CollectionPipesModule, MathPipesModule, ObjectPipesModule, StringPipesModule} from 'ng-pipes';
+
 
 @NgModule({
   declarations: [
@@ -33,7 +36,6 @@ import {HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     CarouselComponent,
     TopHeaderComponent,
-
     AboutUsComponent,
     PopularRecipesComponent,
     TopFooterComponent,
@@ -44,16 +46,22 @@ import {HttpClientModule } from '@angular/common/http';
     WelcomeComponent,
     SigninComponent,
     SignupComponent,
-    ViewRecipeComponent
+    ViewRecipeComponent,
+    ContainPipe,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot(),
-    FormsModule,
     AppRoutingModule,
     HttpClientModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    FormsModule,
+        BooleanPipesModule,     // imports all pipes of the boolean module
+    CollectionPipesModule,  // imports all pipes of the collection module
+    MathPipesModule,        // imports all pipes of the math module
+    ObjectPipesModule,      // imports all pipes of the object module
+    StringPipesModule       // imports all pipes of the string module
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -8,6 +8,7 @@
                 <div class="post-thumb">
                     <img src="http://localhost:8000/storage/{{recipe.img}}" alt="">
                 </div>
+                
                 <!-- Post Content -->
                 <div class="post-content">
                     <div class="post-meta d-flex">
@@ -21,6 +22,9 @@
                                 <a href="#">{{recipe.created_at | date:'yyyy-MM-dd'}} </a>
                             </div>
                         </div>
+
+                         <h2>{{ arr$ | contain: recipe.id }}</h2>
+
                         <!-- Post Comment & Share Area -->
                         <div class="post-comment-share-area d-flex">
                             <!-- Post Favourite -->
@@ -46,3 +50,5 @@
             </div>
         </div>
     </div>
+
+
